@@ -8,4 +8,5 @@
 **/*.pyc
 **/.venv/
 **/dist/
+**/*.tsbuildinfo
 .DS_Store
