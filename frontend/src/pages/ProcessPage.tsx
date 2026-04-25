@@ -1,4 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import axios from "axios";
 import { useMemo, useState } from "react";
 import { backendApi } from "@/api/backendApi";
 import { JobDescriptionEditor } from "@/components/JobDescriptionEditor";
@@ -109,9 +110,17 @@ export function ProcessPage() {
   const process = useMutation({
     mutationFn: async () => {
       if (!jobId) throw new Error("Save the job first");
-      const { data } = await backendApi.post<ApiEnvelope<ProcessData>>(`/api/jobs/${jobId}/process`);
-      if (!data.success || !data.data) throw new Error(data.error ?? "Process failed");
-      return data.data;
+      try {
+        const { data } = await backendApi.post<ApiEnvelope<ProcessData>>(`/api/jobs/${jobId}/process`);
+        if (!data.success || !data.data) throw new Error(data.error ?? "Process failed");
+        return data.data;
+      } catch (e) {
+        if (axios.isAxiosError(e)) {
+          const body = e.response?.data as ApiEnvelope<ProcessData> | undefined;
+          if (body?.error) throw new Error(body.error);
+        }
+        throw e;
+      }
     },
     onSuccess: (d) => {
       setResult(d);

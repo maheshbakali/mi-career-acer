@@ -15,7 +15,7 @@ Edit `.env`:
 
 - `ANTHROPIC_API_KEY` — required for agents
 - `JWT_SECRET` — must match `Jwt:SecretKey` in the .NET `appsettings`
-- Model IDs — defaults target Claude 3.5 Haiku/Sonnet; update if Anthropic renames models
+- Model IDs — defaults use `claude-haiku-4-5` and `claude-sonnet-4-6` (Claude 3.5 snapshot IDs are retired on the API); override in `.env` if needed
 
 ## Run
 

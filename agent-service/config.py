@@ -9,10 +9,10 @@ class Settings(BaseSettings):
     jwt_issuer: str = "mi-career-acer"
     jwt_audience: str = "mi-career-acer-clients"
 
-    anthropic_model_resume: str = "claude-3-5-haiku-20241022"
-    anthropic_model_interview: str = "claude-3-5-haiku-20241022"
-    anthropic_model_assess: str = "claude-3-5-sonnet-20241022"
-    anthropic_model_cover_letter: str = "claude-3-5-haiku-20241022"
+    anthropic_model_resume: str = "claude-haiku-4-5"
+    anthropic_model_interview: str = "claude-haiku-4-5"
+    anthropic_model_assess: str = "claude-sonnet-4-6"
+    anthropic_model_cover_letter: str = "claude-haiku-4-5"
 
     max_context_chars: int = 12000
     max_output_tokens_resume: int = 4096

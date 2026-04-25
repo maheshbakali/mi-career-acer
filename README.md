@@ -6,11 +6,11 @@ Monorepo for a **multi-agent career assistant** MVP: upload a resume (PDF/DOCX),
 
 | Folder | Stack | Port (default) |
 |--------|--------|------------------|
-| [backend-api](backend-api/) | ASP.NET Core **7** Web API, EF Core, PostgreSQL, JWT | `http://localhost:5000` |
+| [backend-api](backend-api/) | ASP.NET Core **8** Web API, EF Core, PostgreSQL, JWT | `http://localhost:5000` |
 | [agent-service](agent-service/) | Python **3.11+**, FastAPI, Anthropic | `http://localhost:8000` |
 | [frontend](frontend/) | React 18, TypeScript, Vite, Tailwind, TipTap | `http://localhost:3000` |
 
-> **Note:** The template targets **.NET 7** because the build environment used SDK 7. To align with **.NET 8**, install the .NET 8 SDK and change `TargetFramework` in `backend-api/backend-api.csproj` to `net8.0`.
+> **Note:** The API targets **.NET 8** (`net8.0`). Install the [.NET 8 SDK](https://dotnet.microsoft.com/download) if you do not have it.
 
 ## Quick start
 
@@ -55,7 +55,7 @@ Monorepo for a **multi-agent career assistant** MVP: upload a resume (PDF/DOCX),
 
 ## Cost tips
 
-- Default models in `agent-service/.env.example` use **Haiku** for resume + interview and **Sonnet** for assessment.
+- Default models in `agent-service/.env.example` use **Haiku 4.5** (`claude-haiku-4-5`) for resume + interview + cover letter and **Sonnet 4.6** (`claude-sonnet-4-6`) for assessment (Anthropic retired Claude 3.5 snapshot IDs).
 - Reuse **History** instead of re-running Process when possible.
 - Keep job descriptions reasonably sized; the API truncates very long plain-text JDs to save tokens.
 
