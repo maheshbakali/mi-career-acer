@@ -64,5 +64,3 @@ Monorepo for a **multi-agent career assistant** MVP: upload a resume (PDF/DOCX),
 Browser → **backend-api** (auth, jobs, resume storage, orchestration) and **agent-service** (Anthropic, extraction). The MVP **Process** flow is fully orchestrated in **.NET**, which calls the Python service with the user’s JWT.
 
 ## License
-
-MIT — see [LICENSE](LICENSE)
