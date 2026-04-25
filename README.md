@@ -64,3 +64,21 @@ Monorepo for a **multi-agent career assistant** MVP: upload a resume (PDF/DOCX),
 Browser → **backend-api** (auth, jobs, resume storage, orchestration) and **agent-service** (Anthropic, extraction). The MVP **Process** flow is fully orchestrated in **.NET**, which calls the Python service with the user’s JWT.
 
 ## License
+
+
+## Screens (UI)
+
+**Login page:**
+<img width="603" height="635" alt="career-acer-login" src="https://github.com/user-attachments/assets/661fcbea-6e9a-40a6-b385-79a1c1d11021" />
+
+
+**Enter Job description and upload resume/CV:**
+<img width="1431" height="988" alt="career-acer-enter-details" src="https://github.com/user-attachments/assets/9588e8a3-0571-44ba-bf57-27a448069126" />
+
+
+**Results from Agent(s):**
+<img width="1392" height="983" alt="career-acer-results1" src="https://github.com/user-attachments/assets/f3e7945e-97a2-4fed-b441-bd79fb80c03c" />
+
+
+**Extended results:**
+<img width="1363" height="953" alt="career-acer-results2" src="https://github.com/user-attachments/assets/f1838338-d14a-47de-8cf3-2e4062cc50e1" />
