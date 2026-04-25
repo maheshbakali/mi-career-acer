@@ -82,3 +82,7 @@ Browser → **backend-api** (auth, jobs, resume storage, orchestration) and **ag
 
 **Extended results:**
 <img width="1363" height="953" alt="career-acer-results2" src="https://github.com/user-attachments/assets/f1838338-d14a-47de-8cf3-2e4062cc50e1" />
+
+
+**History:**
+<img width="1412" height="422" alt="career-acer-history" src="https://github.com/user-attachments/assets/dc857d80-591c-4caa-9dfe-6190b4be36f2" />
