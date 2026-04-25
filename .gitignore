@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/.env
+**/.env.local
+**/uploads/
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/dist/
+.DS_Store
