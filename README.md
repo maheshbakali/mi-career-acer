@@ -65,4 +65,4 @@ Browser → **backend-api** (auth, jobs, resume storage, orchestration) and **ag
 
 ## License
 
-MIT (adjust as needed for your portfolio).
+MIT — see [LICENSE](LICENSE)
